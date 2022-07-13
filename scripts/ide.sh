@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # Vscode
-sudo apt install code
+sudo apt install code -y
 
 # IDEA Community
 flatpak install com.jetbrains.IntelliJ-IDEA-Community

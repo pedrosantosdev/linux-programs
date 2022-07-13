@@ -1,7 +1,5 @@
 #! /bin/sh
 
 # Git
-sudo apt install git
+sudo apt install git python3 -y
 
-# Python
-sudo apt install python3

@@ -1,18 +1,18 @@
 #! /bin/sh
 
-sudo apt install zsh
+sudo apt install zsh -y
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # nerdfonts
-git clone --depth=1 https://github.com/ryanoasis/nerd-fonts.git
+[ -f nerd-fonts ] git clone --depth=1 https://github.com/ryanoasis/nerd-fonts.git
 cd nerd-fonts
 ./install.sh
 ../
 rm -r nerd-fonts
 
 # fzf
-sudo apt-get install fzf
+sudo apt-get install fzf -y
 # zsh-history-substring-search
 git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
 # zsh-syntax-highlighting
